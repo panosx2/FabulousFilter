@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements AAH_FabulousFragm
             //do something or nothing
         } else {
             if (result != null) {
-                ArrayMap<String, List<String>> applied_filters = (ArrayMap<String, List<String>>) result;
+                applied_filters = (ArrayMap<String, List<String>>) result;
                 if (applied_filters.size() != 0) {
                     List<SingleMovie> filteredList = mData.getAllMovies();
                     //iterate over arraymap
